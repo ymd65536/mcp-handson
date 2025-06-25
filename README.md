@@ -26,6 +26,12 @@ fastmcp run server.py
 python server.py
 ```
 
+## Run MCP Client
+
+```bash
+python client.py
+```
+
 ## Option Setup
 
 ```bash
