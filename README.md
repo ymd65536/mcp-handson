@@ -26,6 +26,8 @@ fastmcp run server.py
 python server.py
 ```
 
+## Option Setup
+
 ```bash
 # Install dependencies
 uv add "mcp[cli]" httpx
