@@ -1,6 +1,6 @@
 # MCP
 
-## コマンド
+## Create Environment
 
 ```bash
 # Create a new directory for our project
@@ -15,6 +15,8 @@ source .venv/bin/activate
 ```bash
 uv pip install fastmcp
 ```
+
+## Run MCP Server
 
 ```bash
 fastmcp run server.py
