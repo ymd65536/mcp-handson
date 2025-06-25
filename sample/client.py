@@ -1,7 +1,11 @@
+import asyncio
 from fastmcp import Client
 
-test_client = Client("http://localhost:8000/mcp")  # サーバーのURL
+client = Client("server.py")
 
-# 'add'ツールを呼び出し
-result = test_client.call("add", a=3, b=5)
-print("add(3, 5) =", result)
+async def call_tool(name: str):
+    async with client:
+        result = await client.call_tool("greet", {"name": name})
+        print(result[0].text)
+
+asyncio.run(call_tool("Ford"))
