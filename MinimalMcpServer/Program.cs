@@ -35,4 +35,7 @@ public static class EchoTool
     // Expose a tool that returns the input message in reverse.
     [McpServerTool, Description("Echoes in reverse the message sent by the client.")]
     public static string ReverseEcho(string message) => new string(message.Reverse().ToArray());
+
+    [McpServerTool, Description("Returns the current date and time.")]
+    public static string GetCurrentDateTime() => TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Asia/Tokyo")).ToString("yyyy-MM-dd HH:mm:ss");
 }
