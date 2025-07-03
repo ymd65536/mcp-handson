@@ -38,3 +38,11 @@ python client.py
 # Install dependencies
 uv add "mcp[cli]" httpx
 ```
+
+## Trying MCP with C#
+
+ref: [quick start](https://learn.microsoft.com/ja-jp/dotnet/ai/quickstarts/build-mcp-server)
+
+```bash
+dotnet new console -n MinimalMcpServer
+```
